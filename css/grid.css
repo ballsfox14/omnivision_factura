@@ -1,0 +1,52 @@
+/*Destalles de cliente*/
+.dt_cliente {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.dt_cliente .item {
+  display: flex;
+  justify-content: start;
+  grid-column: 1 / 4;
+  grid-row: 1 / 1;
+}
+.dt_cliente div:nth-child(2) {
+  grid-column: 4/4;
+  grid-row: 1/1;
+  background: saddlebrown;
+}
+.dt_cliente div:nth-child(3) {
+  grid-column: 1/5;
+  grid-row: 2/3;
+  background: firebrick;
+}
+.dt_cliente div:nth-child(4) {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  background: forestgreen;
+}
+.dt_cliente div:nth-child(5) {
+  grid-column: 4/4;
+  grid-row: 3/3;
+  background: darkgoldenrod;
+}
+/*Detalles de compra o productos*/
+
+.cp_detalle{
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 50px auto 90px repeat(2, 60px) 80px;
+    grid-template-rows: 1fr 200px repeat(3, 1fr);
+    padding-top: 10px;
+    background: darkgoldenrod;
+}
+.cp_detalle .item{
+    border: 1px solid red;
+}
+
+.cp_detalle div:nth-child(7){
+
+}
+
+
